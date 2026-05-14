@@ -1,0 +1,79 @@
+.tutorial-container {
+  background: rgba(20, 25, 40, 0.6);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  color: #e0e0e0;
+  max-width: 400px;
+  height: fit-content;
+}
+
+.tutorial-container h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.tutorial-intro {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #bbb;
+  margin-bottom: 24px;
+}
+
+.tutorial-step {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.tutorial-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 17px;
+  top: 40px;
+  bottom: -15px;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.step-number {
+  background: rgba(0, 242, 254, 0.1);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  color: #00f2fe;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.step-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.step-content p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #aaa;
+}
+
+.highlight {
+  color: #ff006a;
+  font-size: 0.9em;
+  font-weight: bold;
+}
