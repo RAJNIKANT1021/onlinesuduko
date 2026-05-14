@@ -23,7 +23,6 @@ function App() {
   // Initialize with a puzzle on load
   useEffect(() => {
     handleGenerate();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleGenerate = useCallback(() => {
